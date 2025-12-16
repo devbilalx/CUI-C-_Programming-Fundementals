@@ -5,7 +5,7 @@ using namespace std;
 
 float straight(float m, float x, float c);
 
-void quadratic(float a,float b,float c);
+void quadratic(float a,float b,float c,float x,float y);
 int main()
 {
 
@@ -17,7 +17,7 @@ int main()
 
     if (operation=='q' || operation=='Q'){
 
-        float a,b,c;
+        float a,b,c,x,y;
 
         cout<<"Enter your value for a:";
 
@@ -31,7 +31,17 @@ int main()
 
         cin>>c;
 
-        quadratic(a,b,c);
+        cout<<"Enter your value for x";
+
+        cin>>x;
+
+        cout<<"Enter your value for y";
+
+        cin>>y;
+
+
+
+        quadratic(a,b,c,x,y);
     }else if(operation=='s'|| operation == 'S'){
 
 
@@ -64,15 +74,11 @@ int main()
     return 0;
 }
 
-void quadratic(float a,float b,float c){
+void quadratic(float a,float b,float c,float x,float y) {
 
-    float x1=(-b+(sqrt(b*b-4*a*c)))/(2*a);
-
-    float x2=(-b-(sqrt(b*b-4*a*c)))/(2*a);
-
-    cout<<"x1 value is :"<<x1<<" x2 value is :"<<x2<<endl;
+    y = a * x * x + b * x + c;
+    cout << "Quadratic result: y = " << y << endl;
 }
-
 
 float straight(float m,float x,float c){
 
