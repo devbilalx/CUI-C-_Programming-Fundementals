@@ -1,0 +1,2 @@
+Unsorted array :[120 210 320 ]
+Sorted array :[320 210 120 ]
