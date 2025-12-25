@@ -144,7 +144,7 @@ void sub(){
         }
     }
 
-    
+
     int x[r1][c1];
 
     int y[r2][c2];
