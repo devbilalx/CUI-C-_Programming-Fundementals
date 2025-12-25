@@ -126,7 +126,7 @@ void dumy(int r1, int c1, int r2, int c2, float k)
     }
 }
 
-void dumy(int r1, int c1, int r2, int c2, string z)
+void dumy(int r2, int c2, int r1, int c1, string z)
 {
 
     if (c1 == r2)
@@ -241,7 +241,7 @@ int main()
     break;
 
     case 3:
-    dumy(r1,c1,r2,c2,z);
+    dumy(r2,c2,r1,c1,z);
 
     break;
     default:
